@@ -19,7 +19,8 @@ namespace apiWeb
             services.AddControllers(action => {
                 action.ReturnHttpNotAcceptable = true;
                 
-            }).AddXmlDataContractSerializerFormatters();
+            }).AddXmlDataContractSerializerFormatters()
+            .AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
